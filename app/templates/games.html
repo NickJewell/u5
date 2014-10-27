@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+
+  <head>
+    <title>Game List</title>
+  </head>
+
+  <body>
+
+    <h1>Games with this mechanic</h1>
+
+    <ul>
+    {% for bgg_name in games: %}
+              <li><a href="/game/{{bgg_name[0]}}">{{bgg_name[0]}}</a></li>
+    {% endfor %}
+    </ul>
+
+  </body>
+
+</html>

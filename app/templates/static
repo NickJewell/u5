@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+
+  <head>
+    <title>Unity Recommendations</title>
+  </head>
+
+  <body>
+
+    <h1>Recommended Connections:</h1>
+
+    <ul>
+    {% for node in network: %}
+            <li>Talk to {{node[2]}} {{node[3]}} about {{node[4][0]}} via {{node[0]}} {{node[1]}}</li>
+    {% endfor %}
+    </ul>
+
+  </body>
+
+</html>

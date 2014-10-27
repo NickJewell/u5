@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+
+  <head>
+    <title>Unity Node Test</title>
+  </head>
+
+  <body>
+
+    <h1>Connections for this node</h1>
+
+    <ul>
+    {% for node in network: %}
+            <li>{{node[0]}} {{node[1]}} ({{node[2]}}) - {{node[3]}}</li>
+    {% endfor %}
+    </ul>
+
+  </body>
+
+</html>
