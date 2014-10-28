@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+
+  <head>
+    <title>List</title>
+  </head>
+
+  <body>
+
+    <h1>Home: {{network_rels[0][1]}} {{network_rels[0][2]}}</h1>
+
+    <ul>
+    {% for result in network_rels: %}
+              <li>{{result[4]}} {{result[5]}}
+			  </li>
+				  
+    {% endfor %}
+    </ul>
+
+  </body>
+
+</html>

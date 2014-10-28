@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+
+  <head>
+    <title>List</title>
+  </head>
+
+  <body>
+
+    <h1>Connection Recommendations:</h1>
+
+    <ul>
+    {% for result in triangles: %}
+              <li>{{result[0]}} {{result[1]}} can connect you to {{result[2]}} {{result[3]}} based on: 
+				  <ul>{% for tag in result[4]: %}
+			  		<li>{{tag}}</li>
+				  {% endfor %}</ul>
+			  </li>
+				  
+    {% endfor %}
+    </ul>
+
+  </body>
+
+</html>

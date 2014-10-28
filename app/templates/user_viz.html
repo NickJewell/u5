@@ -26,7 +26,7 @@ text {
 <script>
 
 // get the data
-d3.csv("../static/force.csv", function(error, links) {
+d3.json("/unity_viz_edges/{{user}}", function(error, links) {
 
 var nodes = {};
 
