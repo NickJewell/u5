@@ -40,14 +40,14 @@ links.forEach(function(link) {
 });
 
 var width = 960,
-    height = 500;
+    height = 1000;
 
 var force = d3.layout.force()
     .nodes(d3.values(nodes))
     .links(links)
     .size([width, height])
-    .linkDistance(60)
-    .charge(-300)
+    .linkDistance(100)
+    .charge(-500)
     .on("tick", tick)
     .start();
 

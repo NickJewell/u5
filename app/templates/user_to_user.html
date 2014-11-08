@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+
+  <head>
+    <title>List</title>
+  </head>
+
+  <body>
+	
+    <h1>Connection {{node1}} -> {{node2}}</h1>
+
+    <ul>
+    {% for result in node1_2: %}
+              <li>Tag: {{result[1]}} - Strength: {{result[2]}}</li>
+    {% endfor %}
+    </ul>
+	
+    <h1>Connection {{node2}} -> {{node1}}</h1>
+
+    <ul>
+    {% for result in node2_1: %}
+              <li>Tag: {{result[1]}} - Strength: {{result[2]}}</li>
+    {% endfor %}
+    </ul>
+
+
+  </body>
+
+</html>
